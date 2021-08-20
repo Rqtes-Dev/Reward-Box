@@ -1,0 +1,10 @@
+name: Reward-Box
+main: RewardBox\Loader
+version: 1.0.0
+api: 3.0.0
+author: "Rqtes"
+
+commands:
+  rewardbox:
+    permission: "rewardbox.command.use"
+    description: "get reward boxes"
