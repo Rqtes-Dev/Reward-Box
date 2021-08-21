@@ -35,8 +35,8 @@ class Loader extends PluginBase implements Listener {
     $item = $event->getItem();
     $player = $event->getPlayer();
     if($item->getCustomName() == "§r§l§bReward Box"){
-      $chance = rand(16, 64);
-      $reward = Item::get(Item::DIAMOND_BLOCK, 0, $chance);
+      $amount = rand(16, 64);
+      $reward = Item::get(Item::DIAMOND_BLOCK, 0, $amount);
       $player->getInventory()->addItem($reward);
       $player->getLevel()->addSound(new AnvilFallSound(new Vector3($player->getX()), 2));
       $player->sendMessage("§6You received a reward!");
